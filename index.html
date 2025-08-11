@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="popcorn.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=EB+Garamond&display=swap" rel="stylesheet">
+    <!--bootstrap <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <title>Magical Stories</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span>🛏️ Snack's Bedtime</span> 
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </header>
+    
+    <section class="hero">
+        <h1 class="main-title">Magical Bedtime Stories</h1>
+        <p class="main-title">Join Snack on wonderful adventures that will spark your imagination</p>
+    </section>
+
+    <div class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="allstories.html" class="nav-button">All Stories</a></li>
+            <li class="nav-item"><a href="wonderland.html" class="nav-button">Wonder Land</a></li>
+            <!-- <li class="nav-item"><a href="guessgamev3.html" class="nav-button">Guess Game</a></li> -->
+            <!-- <li class="nav-item"><a href="piano.html" class="nav-button">Chill Room/ Piano</a></li> -->
+            <!-- <li class="nav-item"><a href="dreamelevator.html" class="nav-button">Dream elevator! Neil.fun</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Wonders of streetview</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Traffic challange</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Park with Snack / bus jam android game</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Bakery mart game strawberry Jams on shelves with ASMR sound game</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Satisfying ASMR sound - balls falling into an aquarium physics in godot</a></li>
+            <li class="nav-item"><a href="#" class="nav-button">Fish aquarium game godot</a></li> -->
+            <li class="nav-item"><a href="#" class="nav-button">About</a></li>
+        </ul>
+    </div>
+
+    <div class="heading-container">
+        <h2 class="trending-title">Start here</h2>
+
+    </div>
+    <!-- <div class="">
+        <p class="text-content">There is a magical adventure packed just for tonight — and there's always room for one more cozy bedtime story.</p>
+        <p class="text-content">Instruction: ✨ Simply visit All Stories, tap the purple "Play" button to listen, or click a story card to read your way into dreamland.</p>
+        <p class="text-content">P.S. See that little popcorn bag below? 🍿 Give it a click. It’s your secret smile-pass.</p>
+    </div> -->
+
+    <div class="intro-bubble">
+        <p>✨There is a magical adventure packed just for tonight — and there's always room for one more cozy bedtime story.</p>
+        <p>✨Instruction: Simply visit All Stories, tap the purple "Play" button to listen, or click a story card to read your way into dreamland.</p>
+        <p>✨P.S. See that little popcorn bag below? 🍿 Give it a click. It’s your secret smile-pass.</p>
+    </div>
+
+
+    <div class="heading-container">
+        <h2 class="trending-title">Trending stories</h2>
+    </div>
+
+     <!-- <div class="snow-container">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:10%; --duration:5s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:20%; --duration:4s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:30%; --duration:6s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:40%; --duration:7s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:50%; --duration:5s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:60%; --duration:6s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:70%; --duration:5s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:80%; --duration:4s;">
+        <img class="snowflake" src="img/1/pillowr.png" style="--left:90%; --duration:7s;">
+    </div>  -->
+    
+
+<!-- story cards -->
+    
+        <div class="card-container">
+        <div class="card">
+            <img src="img/laundrycc.png" alt="Laundry">
+                <div class="card-content">
+                    <span class="category adventure">Calm meeting</span>
+                    <h3>Laundry, the beginning</h3>
+                    <p class="story-preview">Snack checks out the Laundromat...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@tumbledry</span>
+                        <span class="likes">⭐ <span class="star-count">215</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+        </div>
+    
+        <div class="card">
+            <img src="img/balloong.jpg" alt="The Balloon Ride">
+                    <div class="card-content">
+                        <span class="category adventure">Adventure, Exploration & Travel</span>
+                        <h3>The Balloon Ride</h3>
+                        <p class="story-preview">Snack chasing a balloon which holds…</p>
+                        <div class="card-footer">
+                            <span class="user">@skybound</span>
+                            <span class="likes">⭐ <span class="star-count">210</span></span>
+                            <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                        </div>
+                    </div>
+        </div>
+
+        
+        <div class="card">
+            <img src="img/boatonthenile.png" alt="Boat on the Nile">
+            <div class="card-content">
+            <span class="category adventure">Travel & Adventure</span>
+            <h3>Boat on the Nile</h3>
+            <p class="story-preview">Floating gently down the Nile, watching fascinating...</p>
+            <div class="card-footer">
+                <span class="user">@seashore</span>
+                <span class="likes">⭐ <span class="star-count">234</span></span>
+                <span class="heart" onclick="toggleLike(event, this)">🤍</span> <!-- White heart initially -->
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Flowchart / This is the pop-up window structure -->
+   <!--  <div id="flowchart-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <h3 id="modal-title" class="text-xl font-bold mb-4"></h3>
+            <p id="modal-desc" class="text-gray-600"></p>
+            <button id="modal-close" class="mt-6 ...">Close</button>
+        </div>
+    </div> -->
+
+     <!-- Add a container for the p5.js sketch -->
+     <!-- <div id="sketch-container" style="text-align: center; margin: 20px 0;"> -->
+        <!-- <h2>Horse Animation</h2> -->
+        <!-- The canvas will be appended here -->
+    </div>
+
+    <!--Background particles-->
+    <div id="particle-container"></div>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="end-title">THE END. (OF THIS PAGE)</h2>
+             <img id="popcorn" src="popcorn sad.png" alt="Popcorn Bucket" width="100">
+            <div class="footer-text">
+                <p>© <span id="year"></span> Snack's Bed Time Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptv2.js"></script>
+    <script src="popv1.js"></script>
+    <!-- <script src="modalflow.js"></script> -->
+    
+    <!-- <script src="sketch.js"></script>  -->
+
+</body>
+</html>

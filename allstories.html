@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+
+    <title>Magical Stories</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <span>🛏️ Snack's Bedtime</span>
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <section class="hero">
+        <h1 class="main-title">Magical Bedtime Stories</h1>
+        <p class="main-title">Join Snack on wonderful adventures that will spark your imagination</p>
+    </section>
+    <main>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-button">Home</a></li>
+                <li class="nav-item"><a href="wonderland.html" class="nav-button">Wonder Land</a></li>
+                <!-- <li class="nav-item"><a href="guessgamev3.html" class="nav-button">Guess Game</a></li>
+                <li class="nav-item"><a href="dreamelevator.html" class="nav-button">Dream elevator!</a></li> -->
+                <li class="nav-item"><a href="#" class="nav-button">About</a></li>
+            </ul>
+        </div>
+
+
+        <div class="heading-container">
+            <h2 class="trending-title">All Stories</h2>
+        </div>
+
+
+        <!-- story cards -->
+        <div class="card-container">
+            <!--Laundry story-->
+            <div id="node-15" class="flowchart-node ... card" data-desc="Zayn arrived at the laundromat after a long, productive day. The place was quiet, with only the gentle hum of machines and the scent of lavender detergent in the air. He loaded his clothes, pressed a few buttons, and leaned back in one of the sofas, ready to wait out the cycle.
+                Just as he pulled out a book to pass the time, the door opened and in walked a young woman with curious eyes and a calm presence. She looked around thoughtfully, studying the machines as if trying to understand how they worked, her fingers brushing gently over the buttons. Zayn watched her for a moment. There was something quietly magnetic about her — like she carried a whole story in the way she moved.
+                He stood up, walked over slowly, and said, “I can help, if you’d like.”
+                She glanced at him with a gentle smile. “Thanks,” she replied, “It would be nice.”
+                Zayn could tell she didn’t really need help. She was the kind of person who figured things out on her own. But he had felt the pull to say something — anything — just to open a window for a conversation. Sometimes you don’t wait for a moment to arrive. You create it.
+                Once the cycle was running, they sat side by side on the sofa. Conversation came surprisingly easily. They exchanged quiet observations and small jokes that turned into real laughter.
+                Minutes passed, and the space around them seemed to fade away. He asked her name, and she answered, “Snack.”
+                Zayn smiled. “Is that your real name?”
+                She tilted her head, half teasing. “Maybe. Maybe not. But it’s the name I like best.”
+                At one point, Zayn stepped out for some air. He leaned against the wall, heart thudding in his chest. Stay calm, he told himself. Don’t overthink. It wasn’t like him to feel this stirred so quickly — but something about Snack felt familiar, even though they’d just met.
+                When he returned, the laundromat manager was advising Snack to use the tumble dryers on the highest heat setting.
+                Zayn shook his head. “Just be careful — I made that mistake once, and my shirt turned into a napkin.”
+                Snack paused, looked at him, then burst into laughter. “Wait—are you serious?”
+                “Too serious,” Zayn replied, eyes bright.
+                Though she had no proof, she believed him more than the manager. It wasn’t the warning itself — it was the way he said it, light and real, like he was letting her in on something true.
+                When their cycles finished, they folded their clothes side by side, neither of them ready to leave.
+                Zayn hesitated, then took a breath. “Would it be okay if I reached out sometime? Maybe for coffee… or something with less heat risk.”
+                Snack’s smile was warm and steady. “I’d like that.”
+                They exchanged numbers, both feeling a little surprised at how natural it all felt. At the time, neither of them could have guessed that what began between humming machines and the scent of clean laundry would become a collection of adventures, stretched across valleys, rivers, rooftops, and skies.
+                But that’s how the best stories begin — quiet, gentle, and completely unexpected.
+                The End.
+                ">
+                <img src="img/laundrycc.png" alt="Laundry">
+                <div class="card-content">
+                    <span class="category adventure">Calm meeting</span>
+                    <h3>Laundry, the beginning <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Snack checks out the Laundromat...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@tumbledry</span>
+                        <span class="likes">⭐ <span class="star-count">215</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+            
+            <audio id="storyAudio15" src="audio/snacksbedtime-laundry.mp3"></audio>
+        </div>
+
+
+
+            <!--Trailer Coffee Shop story-->
+            <div id="node-3" class="flowchart-node ... card" data-desc="Not long after their unexpected meeting at the laundromat, Zayn invited Snack to meet again. “I’ve got a surprise planned,” he told her. “Just meet me by the main square.” Zayn arrived first. A few moments later, Snack appeared, and they greeted each other with quiet smiles. “I thought I’d give you the grand tour,” Zayn said with a quiet smile. He wasn’t nervous anymore. Or maybe he was, just a little — but it no longer got in the way. He seemed at home here. After walking a while, they paused beneath a tree, where Zayn reached into his bag and handed Snack a ripe apricot. Its skin was warm from the sun, and the fruit was soft and sweet, like nectar.
+                Then, with a slightly shy grin, he held out something small — an apricot’s seed, carved into the shape of a tiny flower. Snack smiled as she took it, gently turning it in her fingers. A quiet keepsake from an unfolding day.
+                And after this little surprise the loooong walk begin. they went past a famous historical area with lots of green area, Zayn pointing out clusters of wildflowers hidden along the path, small trails that led to watering holes, and a distant grove where flamingos sometimes stopped to rest. Snack listened, interested not just in what he said, but how he said it. He didn’t speak like he was showing off. It was more like he was sharing something he’d been quietly collecting and had finally found someone he wanted to share it with. As the sun rose higher and the air warmed, he led her to the top of a gentle hill. Below them, tucked under the shade of tall trees, was a trailer — white with red stripes, with its roof folded open like a flower in bloom.
+                “Best coffee in the wild,” Zayn said, tilting his head toward it. “And yes, the barista is a giraffe.”
+                Snack gave him a look, somewhere between skeptical and delighted.
+                They made their way down the slope, and sure enough, there behind the counter stood a tall giraffe wearing a green apron, calmly grinding coffee beans. Its long neck curled gracefully to greet them as they approached.
+                “Welcome, friends,” the giraffe said warmly. “What may I prepare for you today?”
+                Zayn glanced at Snack. “Go on. You have to try their signature blend. It’s legendary.”
+                Snack grinned. “One cup of the best you’ve got, please.”
+                The giraffe nodded with quiet ceremony. “You’ll be tasting beans from the hills of Africa and the slopes of Honduras. Roasted fresh this morning. With a hint of cocoa.”
+                They sat on a low bench outside, two cups warming their hands, the view of the golden plains stretching out before them. Every sip felt like it belonged exactly where they were — earthy, deep, and smooth.
+                Snack leaned back slightly, her eyes following a slow-moving elephant in the distance.
+                “I don’t usually sit still this long,” she said softly. “But this… I could get used to this.”
+                Zayn looked over. “Me too.”
+                There wasn’t a rush to fill the silence. They sat with it comfortably, watching the day stretch onward, feeling both familiar and entirely new to each other.
+                When they stood to leave, the giraffe gently bowed. “Come again,” he said. “Next time, I’ll add cinnamon.”
+                Snack and Zayn walked back toward the path, each carrying something quietly new — not just the warmth of the coffee, but the ease of being seen, and gently understood.
+                Neither of them said it out loud, but both were thinking the same thing:
+                This wasn’t just a meet-up.
+                It was the beginning of something worth continuing.
+                The End.">
+                <img src="img/trailercoffeeshop.png" alt="Trailer Coffee Shop">
+                <div class="card-content">
+                    <span class="category fantasy">Exploration & Nature</span>
+                    <h3>Trailer Coffee Shop <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">The next meet up to a surprise place...</p>
+                    <div class="card-footer">
+                        <span class="user">@juicebox</span>
+                        <span class="likes">⭐ <span class="star-count">156</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+            <audio id="storyAudio3" src="audio/snacksbedtime-trailerv1.mp3"></audio>
+        </div>
+
+        <!--Clean up time story-->
+            <div id="node-2" class="flowchart-node ... card" data-desc="Snack was a mischievous little girl with a big imagination and an even bigger mess in her room. Her parents had asked her a hundred times (maybe even a thousand) to clean up, but she always found something “more important” to do—like building a castle out of socks, training her stuffed animals for the circus, or pretending her bed was a pirate ship.
+            One day, her mom walked into the room and gasped. “Snack! This room is a disaster! There’s a spaghetti plate under your bed!”
+            Snack scratched her head. “Ohhh, so that’s where my fork went!”
+            Her dad picked up a banana peel from her chair. “Snack, this is turning into a jungle! I half expect a monkey to swing in here and start eating your leftover snacks!”
+            Snack grinned. “Well, if a monkey did show up, at least he’d have plenty to eat!”
+            Her parents were not amused. “ If you don’t clean your room by tonight, no dessert after dinner,” her mom warned.
+            Snack gasped dramatically. “But what about—”
+            “No cookies.”
+            “No chocolate?”
+            “No ice cream.”
+            Snack flopped onto the floor. This was serious. She could handle messes, but life without dessert? That was too much.
+            So, with a deep sigh and a tiny bit of effort (okay, a lot of effort), she started cleaning. She picked up her toys (except the ones that tried to escape under the bed). She folded her clothes (sort of). She even found that one sock that had gone missing weeks ago (it was living a new life in her toy chest).
+            Finally, after what felt like forever, her room was clean! She flopped onto her bed, exhausted.
+            Her mom peeked in. “Much better!”
+            Her dad gave a thumbs-up. “And look! No monkeys!”
+            Snack grinned. “Well, unless I count as one!” She scratched her head and made monkey noises. “Ooo ooo ah ah!
+            Her parents laughed and led her to the kitchen, where a warm plate of cookies was waiting. As she took a big bite, she thought to herself, Maybe cleaning up wasn’t so bad after all... as long as there’s dessert involved. The End.">
+                <img src="img/cleanuptimegreen.png" class="imgmiddle" alt="Clean Up Time">
+                <div class="card-content">
+                    <span class="category magic">Learning & Growing</span>
+                    <h3>Clean up Time <button type="button" class="story-btn">
+                        ▶ Play
+                        <!-- <span class="sparkle sparkle-1">✨</span>
+                        <span class="sparkle sparkle-2">✨</span>
+                        <span class="sparkle sparkle-3">✨</span> --></button>
+                    </h3>
+                    <p class="story-preview">Crumbs, toys, and socks everywhere...</p>
+                    <div class="card-footer">
+                        <span class="user">@underpillow</span>
+                        <span class="likes">⭐ <span class="star-count">189</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                </div>
+                <audio id="storyAudio2" src="audio/snacksbedtime-cleanuptime.mp3"></audio>
+            </div>
+
+
+        <div class="card-container">
+            <!--Magic carpet story-->
+            <div id="node-4" class="flowchart-node ... card" data-desc="One breezy evening, Little Snack was lounging in her room, flipping through a storybook about faraway lands, when—WHOOSH!—her old, wrinkly rug suddenly lifted off the ground.
+            “AHH!” Snack yelped, grabbing onto the edges as the rug floated higher and higher.
+            It shimmered with golden embroidery, and before she could even ask what was happening, it whooshed out the window and into the starry night sky.
+            “Okay, guess we’re going on an adventure!” Snack giggled, holding on tight.
+            The carpet glided smoothly through the clouds, past twinkling stars, and soon, a golden glow appeared in the distance. As they got closer, Snack gasped.
+            Agrabah!
+            A grand palace with tall towers stood in the heart of the city, glowing under the moonlight. The streets below were alive with music, lanterns, and the delicious smell of freshly cooked pav bhaji. The magic carpet swooped down, weaving between the buildings, when suddenly—
+            THUMP! Something small and fuzzy landed on Snack’s lap.
+            “EEK!” she shrieked. “A flying furball!”
+            The “furball” blinked up at her with big, mischievous eyes. It was a little monkey wearing a tiny red vest!
+            “Oops! Sorry!” the monkey chattered. “Didn’t mean to drop in like that! Name’s Coco.”
+            Snack grinned. “I’m Snack! Wanna go for a ride?”
+            Coco’s eyes sparkled. “Do I ever? Let’s go!”
+            With a flick, the carpet zipped over the bustling marketplace. Below, merchants were selling colorful spices, sparkling jewelry, and stacks of golden dates. Coco pointed excitedly at a stand filled with pastries.
+            “That’s Baklava Bob’s Bakery! He makes the BEST honey pastries!”
+            The carpet suddenly made a loop-de-loop (maybe it was hungry too?) and landed gently in front of the stand. Snack and Coco each grabbed a sticky, syrupy piece of baklava and took a big bite.
+            “Mmm… tastes like magic!” Snack said with her mouth full.
+            They spent the night zooming over the desert, racing shooting stars, and even sneaking past the palace guards (Coco insisted it was for “adventure purposes”). But soon, Snack yawned.
+            “Alright, Magic Carpet, time to head home.”
+            The carpet nodded (well, if carpets could nod) and took off, soaring back through the sky. As the lights of Agrabah faded behind them, Coco waved.
+            “Come back soon, Snack! More adventures await!”
+            With a final swoop, the carpet glided back through Snack’s window, landing softly on her bedroom floor. She flopped onto her bed, still tasting the sweetness of honey and adventure.
+            As she closed her eyes, she whispered, “Best. Night. Ever.” The End.">
+                <img src="img/magiccarpet.png" alt="Magic Carpet">
+                <div class="card-content">
+                    <span class="category magic">Magic, Exploration & Travel</span>
+                    <h3>Magic Carpet <button type="button" class="story-btn">▶ Play</button>
+                    </h3>
+                    <div class="button-container">
+                    </div>
+                    <p class="story-preview">Snack flew above puffy clouds...</p>
+                    <div class="card-footer">
+                        <span class="user">@cloudtop</span>
+                        <span class="likes">⭐ <span class="star-count">120</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio4" src="audio/snacksbedtime-magiccarpet.mp3"></audio>
+            </div>
+
+            <!--Flower Lady story-->
+            <div id="node-5" class="flowchart-node ... card" data-desc="Deep in the heart of Fairyland’s Valley, where flowers sparkled like tiny stars and rivers hummed lullabies, lived the most beautiful creature of all—the Flower Lady.
+            Her beauty was so dazzling, it could blind anyone who was not from the Fairyland and looked at her for too long! So, before setting off on her grand journey, she wrapped herself in a soft, shimmering cape, hiding her glowing radiance.
+            “Time to explore the world beyond the valley!” she whispered, stepping onto the winding mountain path.
+            The journey was steep, but Flower Lady moved gracefully, her footsteps light as petals. Soon, she noticed tiny creatures peeking out from behind the rocks.
+            Little dwarves! With round faces and fuzzy beards, they looked up at her with curiosity.
+            One of them, wearing an oversized red hat, waved excitedly. “Hey, traveler! Join us by the campfire!”
+            Flower Lady smiled. She loved making new friends.
+            The dwarves were roasting something in a bubbling pot. The delicious smell filled the air.
+            “Mountain-berry soup!” one dwarf announced, handing her a wooden bowl.
+            Flower Lady took a sip—warm, sweet, and just a little spicy. It felt like a hug in a bowl.
+            “Delicious,” she said, her eyes twinkling.
+            The dwarves cheered and clinked their bowls together in celebration.
+            After a night of laughter and storytelling, Flower Lady continued her journey up the mountain. The air grew cooler, and suddenly—
+            Poof!
+            Her fingertips brushed against something soft. A cloud!
+            She giggled. “I’ve never touched one before!”
+            Curious, she reached out and, with a gentle pull of her magic, brought the fluffy cloud down.
+            “Hmm…” she tapped her chin. “What if…”
+            With a graceful hop, she jumped onto the cloud!
+            And just like that—whoosh!—she was floating.
+            The cloud wiggled under her like a playful pillow, bouncing up and down.
+            “Oh! You’re alive?” she laughed.
+            The cloud made a soft puffing sound, almost like a giggle.
+            “I guess you’re coming with me now!”
+            With her new cloud companion, she soared above the mountains, gliding over rolling green hills, rivers sparkling below like ribbons of silver.
+            She met singing birds, dancing fireflies, and even a fox wearing a tiny scarf. Each one greeted her warmly, offering stories, songs, and little treasures from their world.
+            The adventure had only just begun, but Flower Lady knew one thing for sure—
+            With a heart full of kindness and a cloud as her ride, she was ready to explore all the magic the world had to offer. The End.">
+                <img src="img/flowerlady.jpg" alt="Flower Lady">
+                <div class="card-content">
+                    <span class="category fantasy">Fantasy, Nature & Animals</span>
+                    <h3>Flower Lady <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Flower lady explores the land beyond the valley...</p>
+                    <div class="card-footer">
+                        <span class="user">@petalwhisper</span>
+                        <span class="likes">⭐ <span class="star-count">175</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio5" src="audio/snacksbedtime-flowerlady.mp3"></audio>
+            </div>
+
+            <!--Freddy the froggy story-->
+            <div id="node-6" class="flowchart-node ... card" data-desc="Once upon a time, in a lush green forest, there lived a cheerful little frog named Freddie. Freddie was not an ordinary frog; he had the biggest, brightest smile you could ever imagine. His friends, Bella the Bunny, Timmy the Turtle, and Sammy the Squirrel, loved to spend time with him, especially because Freddie always had the best ideas for adventures!
+            One sunny afternoon, Freddie hopped into the center of the pond, where his friends gathered. “Hey, everyone! Let’s go on a treasure hunt today!” he exclaimed, his eyes sparkling with excitement.
+            “A treasure hunt? That sounds amazing!” squeaked Bella, her fluffy ears perked up.
+            “What's a treasure hunt?” asked Timmy slowly, as he took a deep breath and poked his head out of his shell.
+            “It’s when we search for something special, like shiny coins or hidden secrets!” Freddie explained. “I heard from Uncle Ribbit that there’s a treasure hidden in the old willow tree!”
+            “Oh, that sounds fun! Let's do it!” chirped Sammy, jumping up and down on his little legs.
+            With that, the four friends set off, bouncing and scurrying through the forest. They hopped over colorful mushrooms, dodged vibrant flowers, and splashed through puddles, giggling all the way.
+            When they arrived at the old willow tree, its branches swayed like dancing arms, as if it wanted to welcome them. “Now, how do we find the treasure?” Timmy asked, scratching his head.
+            “Let’s look for clues!” suggested Freddie, and they spread out to search. Bella found a glittery feather, Sammy uncovered a shiny pebble, but Timmy was having a tough time. “I’m just too slow! I’ll never find anything!” he sighed.
+            Freddie noticed his friend was feeling blue. “Hey, Timmy! You don't have to be fast to find treasures; you just have to look closely!” he encouraged.
+            Feeling a little better, Timmy focused on the ground. Suddenly, he spotted something poking out of the dirt. “Look! I found something!” he shouted excitedly, digging it out carefully.
+            It was an old, rusty key! The friends gathered around Timmy, eyes wide with wonder. “What do you think the key opens?” asked Sammy, twitching his tail in anticipation.
+            “I think I remember Uncle Ribbit saying that there's a special box hidden nearby!” Freddie exclaimed. “Let’s find it!”
+            With Freddie leading the way, they scoured the area for the mysterious box. After what felt like forever, they stumbled upon a small, moss-covered chest hidden among the roots of the willow tree.
+            Freddie’s heart raced. “This must be it!” He jumped up and down, feeling like a superhero. They all gathered around as Timmy inserted the key into the rusty lock, and with a surprising click, the box opened with a creak.
+            Inside, they found not gold or jewels, but a collection of beautiful drawings made by all the animals in the forest! There were pictures of them laughing, playing, and having fun together.
+            Freddie smiled widely. “This is the true treasure! It shows our wonderful friendship. We should add our own drawings to it!”
+            So, that’s what they did! They spent the afternoon drawing, laughing, and sharing stories, knowing that the best adventures are the ones spent together.
+            And from that day on, Freddie, Bella, Timmy, and Sammy created many more treasures—of laughter, friendship, and love. The End.">
+                <img src="img/freddy.jpg" alt="Freddy the Froggy">
+                <div class="card-content">
+                    <span class="category nature">Nature & Animals, Silly & Mischief</span>
+                    <h3>Freddy the Froggy <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Freddy the frog and his friends found an old treasure map...</p>
+                    <div class="card-footer">
+                        <span class="user">@pondpal</span>
+                        <span class="likes">⭐ <span class="star-count">190</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+            </div>
+            <audio id="storyAudio6" src="audio/snacksbedtime-freddie.mp3"></audio>
+        </div>
+
+            <!--Mischievous Zayn story-->
+            <!-- <div id="node-7" class="flowchart-node ... card" data-desc="Snack had a peaceful morning planned.
+
+                She was going to read her favorite book, sip a strawberry smoothie, and maybe—just maybe—build a very organized line of jellybeans sorted by color, size, and chewiness.
+
+                But then...
+
+                Zayn happened.
+
+                “MORNIN’, SNACK!” he shouted, bursting through the window on a rolling suitcase like a superhero without a license.
+
+                Before Snack could say “Use the door like a normal human,” a whoopee cushion exploded under her beanbag.
+
+                PHBBBBTT!
+
+                “ZAYN!” Snack groaned. “That’s the third time this week!”
+
+                Zayn grinned. “And still funny.”
+
+                Then came the invisible ink on her smoothie cup, the fake spider in her sock drawer, and a talking sandwich that turned out to be Zayn hiding behind the couch with a walkie-talkie and way too much free time.
+
+                Snack’s patience meter was running low.
+
+                Really low.
+
+                “Can you please just chill for one day?” she asked. “One day without rubber chickens or exploding marshmallows?”
+
+                Zayn blinked. “Hmm… okay.”
+
+                He sat down beside her. Quietly.
+
+                Too quietly.
+
+                Snack narrowed her eyes. “What are you up to now?”
+
+                Zayn reached into his pocket and pulled out…
+
+                A tiny, perfectly wrapped present.
+
+                “For you,” he said. “No tricks. Promise.”
+
+                Snack cautiously opened it.
+
+                Inside was a little pin that said:
+                “#1 Jellybean Organizer”
+
+                Snack’s jaw dropped. “Wait… this is… kinda sweet.”
+
+                Zayn shrugged. “I saw it and thought of you. You’re way more patient with me than I deserve.”
+
+                Snack blinked. “Wow. That might be the nicest thing you’ve ever—”
+
+                POP!
+                Confetti exploded from the bottom of the box.
+
+                Snack stared. Her hair was now covered in glittery sprinkles.
+
+                Zayn snorted. “Okay, that part was a trick.”
+
+                She glared at him.
+
+                Then… she burst out laughing.
+
+                “Ugh, you’re the worst!” she giggled, flicking a sprinkle at him.
+
+                “But also kinda the best.”
+
+                Zayn grinned, handing her a jellybean. “Friends?”
+
+                Snack smiled. “Always.”
+
+                As the sun began to set and the world got quieter, Snack realized something:
+                Zayn’s pranks might be a lot,
+                but so was his heart.
+
+                And sometimes, laughter was just what she needed most.">
+                <img src="img/1borito.png" alt="Mischievous Zayn">
+                <div class="card-content">
+                    <span class="category silly">Silly & Mischief, Friendship & Feelings</span>
+                    <h3>Mischievous Zayn <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Zayn’s tests Snack’s patience...</p>
+                    <div class="card-footer">
+                        <span class="user">@trickster</span>
+                        <span class="likes">⭐ <span class="star-count">165</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio7" src="audio/snacksbedtime-magiccarpet.mp3"></audio> -->
+            
+
+        <div class="card-container">
+
+                <!--The ballon ride story-->
+                <div id="node-8" class="flowchart-node ... card" data-desc="One sunny afternoon, Little Snack was chilling under a bridge near the beach with her ice cold LIT, while the waves crashed gently against the shore, and the salty breeze made everything feel just right… but suddenly something strange floated by.
+                    A big, red balloon on a string, drifting past in the wind.
+                    Snack narrowed her eyes. That was strange enough… 
+                    She rubbed her eyes and looked again.
+                    Dangling from the balloon was a boy!
+                    “ZAYN?!” Snack shouted, jumping to her feet.
+                    Zayn was dangling in midair, holding onto the string with one hand, waving wildly with the other.
+                    “Snack! GRAB THE STRING!” he yelled.
+                    Snack leaped forward and tried to pull the balloon down, but instead, the balloon tugged her up. Before she knew it, she was off the ground…
+                    The balloon soared higher, drifting over the ocean.
+                    Snack gasped as the waves grew smaller beneath her. “Zayn! What is going ON?!”
+                    Zayn grinned. “Just another perfectly normal adventure.”
+                    “This is not normal!” Snack said, though she couldn’t help but laugh.
+                    Then she noticed something moving below — a dark shape sliding through the water. It grew larger as it followed them.
+                    “Zayn,” she said slowly, “please tell me that’s not a shark.”
+                    Zayn glanced down. His face froze.
+                    “Okay. Bad news? That is definitely a shark.”
+                    Snack gulped. “Good news?”
+                    Zayn smiled. “I have secret weapons.”
+                    He pulled a toy bubble wand from his pocket.
+                    “Snack, meet the bubble blower 2000.”
+                    Snack blinked. “Your what now?”
+                    Zayn pulls out a toy bubble wand and he flipped a switch.
+                    A giant stream of bubbles bursts out from the toy, which strangely confuses the shark, and it happily chases them instead of the balloon.
+                    Snack’s jaw dropped. “WHAT?! That actually worked?!”
+                    Zayn replied, while holding up a bubble wand. “And if it didn’t work, I was gonna yell at it REALLY LOUD.”
+                    Snack shook her head, but a smile tugged at her lips. “You are so weird.”
+                    “And yet, we’re alive.” Zayn replied
+                    Up ahead, Snack spotted a small fishing boat rocking gently on the water. She pointed towards it. “There — let’s aim for that.”
+                    The balloon carried them closer until, at last, they tumbled safely onto the deck.
+                    The fisherman’s hat flew off by their landing. “Where did YOU come from?!”
+                    Snack brushed the sand off her arms. “Long story.”
+                    She sank to the floor, still catching her breath. “That was pretty crazy.”
+                    Zayn stretched out beside her and replied: “Yep. But you have to admit… kinda fun.”
+                    Snack tilted her head, then gave a short laugh. “Fine. Kinda fun.”
+                    Zayn grinned mischievously. “Want to do it again?”
+                    Snack bolted upright. “NO.”
+                    Zayn just chuckled, hiding the spare balloon behind his back. The End.
+                    ">
+                    <img src="img/balloong.jpg" alt="The Balloon Ride">
+                    <div class="card-content">
+                        <span class="category adventure">Adventure, Exploration & Travel</span>
+                        <h3>The Balloon Ride <button type="button" class="story-btn">▶ Play</button></h3>
+                        <p class="story-preview">Snack chasing a balloon which holds…</p>
+                        <div class="card-footer">
+                            <span class="user">@skybound</span>
+                            <span class="likes">⭐ <span class="star-count">210</span></span>
+                            <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                        </div>
+                    </div>
+                    <audio id="storyAudio8" src="audio/snacksbedtime-balloon.mp3"></audio>
+                </div>
+            
+            <!--Tooth Fairy story-->
+            <!-- <div id="node-9" class="flowchart-node ... card" data-desc="One night, Little Snack wiggled her very last baby tooth and grinned when it finally popped free.
+            “Yes!” she whispered, placing it carefully under her pillow.
+            She had heard the stories—leave a tooth, wake up to a shiny coin from the Tooth Fairy.
+            With a satisfied yawn, she snuggled into bed, dreaming of all the cool things she could buy with her soon-to-be fairy reward.
+            But when morning came, Snack blinked awake, reached under her pillow, and instead of a coin…
+            Nothing.
+            Her fingers patted around. Still nothing.
+            Snack sat up. “Wait a minute… where’s my coin?!”
+            Then, out of the corner of her eye—
+            She saw a boy with messy hair and a mischievous grin standing at the door.
+            It was Zayn.
+            And in his hand?
+            HER shiny coin.
+            Snack gasped. “HEY! That’s mine!”
+            Zayn laughed and twirled the coin between his fingers. “Finders, keepers!”
+            Then—
+            ZOOM!
+            Zayn bolted out of the room.
+            Snack leaped out of bed. “OH NO, YOU DON’T!”
+            And the chase was on!
+            Through the Hallway
+            Snack zigzagged around chairs as Zayn leaped over a couch, flipping the coin in the air just to show off.
+            Through the Kitchen
+            Zayn slid under the table—Snack dove after him. A bowl of cereal toppled over.
+            “Oops!” Zayn laughed, dodging the spilled milk.
+            Snack lunged—almost had him!—but Zayn grabbed a banana, took a bite mid-run, and kept going.
+            Out into the Yard
+            Zayn dashed across the grass, jumping over a sprinkler.
+            Snack sprinted after him, getting soaked in the process.
+            “You are SO BUSTED!” she shouted, shaking off water.
+            Zayn grinned, flipping the coin one last time—
+            But he miscalculated. The coin flew up, up, up… and landed—PLUNK!
+            Right into the birdbath.
+            Both Snack and Zayn skidded to a stop.
+            For a second, they just stared at the rippling water.
+            Then—
+            They both burst out laughing.
+            Snack shook her head. “You are so much worse than the Tooth Fairy.”
+            Zayn smirked. “But way more fun, right?”
+            Snack sighed, rolled up her sleeves, and fished the coin out of the water.
+            Dripping wet, but still shiny.
+            She looked at Zayn. “Split a snack with me and I’ll forgive you.”
+            Zayn grinned. “Deal.”
+            And with that, Tooth Fairy Trouble was officially over.">
+                <img src="img/1borito.png" alt="Tooth Fairy in Town">
+                <div class="card-content">
+                    <span class="category magic">Magic, Bedtime Wind-down</span>
+                    <h3>Tooth Fairy in Town <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">The reward coin went missing in a mysterious way...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@sparklewing</span>
+                        <span class="likes">⭐ <span class="star-count">180</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+            </div>
+            <audio id="storyAudio9" src="audio/snacksbedtime-magiccarpet.mp3"></audio>
+        </div> -->
+
+            <!--Kiwi's journey story-->
+            <div id="node-10" class="flowchart-node ... card" data-desc="One golden morning, Snack was lying on a patch of moss near the edge of the fairy land forest, nibbling on a honey cracker and wondering what kind of adventure the day might bring.
+
+                That’s when a small, round bird with soft brown feathers waddled out from the underbrush. It had a beak longer than its whole face and big curious eyes.
+
+                “Hi there,” Snack said, sitting up. “You look like you know where you’re going.”
+
+                The bird blinked up at her and gave a tiny nod. Then, without a word, it turned and started marching toward the trees.
+
+                Snack quickly stuffed the last bit of cracker into her mouth, dusted off her knees, and followed.
+
+                “You’ve got a name?” she asked as they crossed a stream by hopping over smooth, mossy stones.
+
+                The bird paused at a mushroom stump and looked back.
+
+                “Kiwi,” said a tiny voice in her mind, as if whispered by the forest itself.
+
+                Snack smiled. “Kiwi. Of course you are.”
+
+                The forest deepened, but not in a scary way. The sunlight trickled through the leaves like it had taken lessons in being gentle. The air smelled like cinnamon bark and something sweet that Snack couldn’t quite name.
+
+                Kiwi trotted confidently ahead, as if it had made this journey a hundred times before.
+
+                They passed beneath trees whose trunks twisted like braids and whose roots glowed softly beneath the earth. Wildflowers blinked open as they passed, as if curious to see who was visiting.
+
+                “Are we going somewhere special?” Snack asked.
+
+                Kiwi responded by hopping up onto a low log and tapping it with its beak. The log gave way to a hidden path, edged with silver moss and tiny lantern bugs that lit up with each step.
+
+                Snack’s eyes widened. “Now this is an adventure.”
+
+                Further along the trail, they met a family of raccoons juggling berries, a sleepy fox napping in a hammock of vines, and a shy turtle who handed Snack a pebble shaped exactly like a heart.
+
+                The deeper they went, the more magical it became. At one point, the trail turned into a bridge made of woven roots, suspended high above a babbling creek. Below, frogs sang in perfect harmony while fireflies blinked along with the beat.
+
+                Snack turned to Kiwi. “Is this what you do all day?”
+
+                Kiwi gave a slow nod and fluffed its feathers, clearly proud of its hidden world.
+
+                Eventually, they reached a small clearing where the trees parted in a perfect circle. In the center stood a flat stone that shimmered in the afternoon light. Kiwi hopped onto it and looked up at Snack as if to say, This is it.
+
+                Snack sat beside her new friend, letting the warmth of the stone fill her up from the toes up. She took out a cracker from her pocket and broke it in half.
+
+                “Want to share?”
+
+                Kiwi gently took a nibble, then nestled beside her, content.
+
+                For a while, neither of them said anything. The trees rustled softly, and the lantern bugs began to glow a little brighter.
+
+                Snack smiled. “Thanks for showing me your secret world, Kiwi. I think I needed this.”
+
+                The little bird gave one more nod and closed its eyes.
+
+                As the sun dipped lower, casting gold across the treetops, Snack knew the way back would be just as magical. But for now, she was perfectly happy right where she was—on a stone in the middle of an enchanted forest, with a bird named Kiwi and a heart full of wonder. The End.">
+                <img src="img/Kiwio1.jpg" alt="Kiwi's Journey">
+                <div class="card-content">
+                    <span class="category adventure">Adventure, Nature & Animals</span>
+                    <h3>Kiwi's Journey <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Snack joins Kiwi, a curious bird, on a forest trek...</p>
+                    <div class="card-footer">
+                        <span class="user">@featherfriend</span>
+                        <span class="likes">⭐ <span class="star-count">395</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio10" src="audio/snacksbedtime-kiwisjourney.mp3"></audio>
+                </div>
+
+            <!--Aarti at the Ghat-->
+            <div id="node-14" class="flowchart-node ... card" data-desc="As the boat glided closer to the riverside city, Snack and Zayn could already see the golden shimmer reflecting on the water. The ghat—those long, wide stone steps leading into the river—was filled with people wrapped in soft-colored shawls and bright scarves, lanterns flickering gently in their hands.
+                The crowd was full, but not noisy. It felt like the city had taken a long, slow breath and was holding it in wonder. People stood shoulder to shoulder, but no one pushed, no one rushed. Everything moved with quiet purpose, like they were all part of something much bigger than themselves.
+                Snack and Zayn remained in the boat, which had gently anchored a little way from the shore. Their legs dangled over the edge, feet hovering just above the river’s smooth surface.
+                “This is it,” Snack whispered. “The Aarti.”
+                Zayn nodded slowly. “It’s even more beautiful than I imagined.”
+                Dozens of brass lamps lined the edge of the water. Priests in flowing robes stood barefoot on platforms, their hands steady as they lit each flame. The firelight danced across their faces, and the smoke from incense curled toward the sky like soft ribbons. As warm refreshments lemon chai was served in the boats.
+                Though people gathered from all around—families, travelers, pilgrims, children—the hush of the moment remained untouched. Even from the boat, Snack could feel it: a stillness that wasn’t silence, but a kind of shared calm.
+                As the lamps were raised in wide, slow circles, the light reflected on the water and in the eyes of those watching. The movement was so smooth, so intentional, it almost looked like the flames were painting on the sky itself.
+                Snack watched without speaking, her hands tucked in her lap. She leaned just slightly against Zayn, who sat beside her, knees pulled close. The air smelled faintly of marigold petals and wood smoke.
+                From across the river, tiny flower boats carrying single candles began drifting out into the water. People released them one by one—some with closed eyes, others with soft murmurs of hope.
+                Zayn reached into his bag and pulled out two little candle boats they had prepared earlier. Together, they lit the wicks and placed them gently into the water.
+                The boats floated slowly away, side by side, carrying their quiet wishes into the glowing current.
+                Snack watched them go. “It feels like the river’s listening.”
+                “It does,” Zayn said. “And maybe answering, in its own way.”
+                All around them, the Aarti continued—hands lifting flame after flame, people bowing their heads, stars slowly blooming overhead.
+                Though the crowd stood thick along the ghat, and boats like theirs floated nearby, no one disturbed the peace. It was a different kind of stillness—one that lived in the center of hearts, in the shared knowing that something sacred was happening.
+                As the last flames were offered to the night sky, the river held their reflections like a mirror made of time.
+                Snack exhaled slowly. “I don’t think I’ll ever forget this.”
+                Zayn smiled gently, still watching the lights. “Me neither.”
+                They sat for a long time on the boat, swaying ever so slightly with the current, wrapped in warmth, surrounded by glow, and quietly thankful to be part of something so timeless, so calm, so deeply full. This was a special night where Zayn kept realising Snack’s evershining beauty, just added by the everglowing lights of the Aarti.
+                They crowned the end of the ceremony with the tastiest tomato chaat they had until now.
+                The End.">
+                <img src="img/aarti.jpg" alt="Aarti at the Ghat">
+                <div class="card-content">
+                    <span class="category adventure">Adventure, Exploration & Travel</span>
+                    <h3>Aarti at the Ghat <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">A magical night at the Ghat...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@trailblazer</span>
+                        <span class="likes">⭐ <span class="star-count">205</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio14" src="audio/snacksbedtime-aarti.mp3"></audio>
+            </div>
+            </div>
+
+            <div class="card-container">
+            <!--Mountain heart story-->
+            <div id="node-11" class="flowchart-node ... card" data-desc="Snack and Zayn had been riding for a while on a little scooter higher and higher into the misty mountains. The roads grew narrower, the air cooler. Tall trees gave way to wild shrubs, and every turn revealed a new view that felt like it had been waiting just for them — waterfalls spilling over rocky cliffs, valleys stitched with sunlight, and clouds resting on the shoulders of the peaks.
+                They didn’t talk much during the ride. Not because they had nothing to say, but because the quiet felt too perfect to interrupt.
+                When the path ended, they left the scooter tucked beneath a pine tree and walked the rest of the way on foot. Zayn carried a small thermos of green tea and chips; Snack had tucked one space cake into her coat pocket.
+                After a steep, thoughtful climb, they reached a wide, flat ridge.
+                They took a little rest and Snack broke the space cake in half and passed it to Zayn. 
+                After they went on and soon Snack shouted: There it is!
+                A face, shaped from stone and time, nestled into the mountain. Its eyes were gently closed, its expression still and wise. Then — very slowly — it blinked.
+                Snack took a small step back. Zayn instinctively reached for her hand.
+                Snack thought the space cake’s effect might be kicking in. And she quietly asked:
+                “You’re… alive?”
+                A voice rose from the rock — low, calm, and ancient.
+                “I have always been. I am the Mountain. Some call me Heartpeak. But you may call me Mountain Heart.”
+                Zayn’s brows lifted in quiet wonder. “We didn’t expect company.”
+                The mountain smiled, slow and kind. “Few stay long enough to listen.”
+                Snack and Zayn sat side by side on a flat stone, unpacking their tea and chips. From behind a patch of moss, a squirrel appeared, followed by a pair of mountain calm coyotes and a sleepy goat kid who settled down near Zayn’s feet.
+                The mountain spoke again, voice like a slow wind across still water.
+                “I’ve watched many pass by these ridges. Some carry joy. Some carry sorrow. Most carry more than they realize.”
+                Snack leaned against Zayn’s shoulder. The mist rolled gently around them like a soft blanket.
+                “One traveler came here after losing someone,” Mountain Heart said. “He sat where you sit now. He didn’t speak, but I could feel his ache. I let the wind lift it for him, piece by piece.”
+                Zayn stared out at the valley below, where the trees looked like tiny paint strokes. “It’s strange,” he said softly. “The higher we climbed, the quieter my thoughts became.”
+                Mountain Heart continued. “Another visitor once danced here with bare feet and wild laughter. She braided garlands for squirrels and gave names to the clouds. Her joy still lingers in the moss.” Some call her the Flower Lady.
+                Snack smiled. “I love that.”
+                Then she looked down. “Sometimes I feel like I should be braver than I am.”
+                Zayn gave her hand a gentle squeeze. “Me too.”
+                The mountain’s voice rumbled again, calm and certain.
+                “Courage is not something you hold onto. It’s something you grow into. Even the strongest stone is shaped by time and weather.”
+                They sat quietly for a while. The animals curled up nearby, the mist folding low. The world felt unhurried.
+                As the light faded gently, Mountain Heart said,
+                “You’re welcome here, always. When the world feels too loud, come rest your thoughts among the stillness.”
+                Snack and Zayn stood, shoulders warm with shared stillness.
+                “Thank you,” Zayn said, his voice low.
+                Snack added, “For reminding us how to listen.”
+                The mountain said nothing more. It didn’t need to.
+                With hearts lighter and full of something they couldn’t quite name, they began the slow, quiet walk back to the scooter. The path behind them shimmered in the last light, as if it, too, had been listening.
+                And somewhere in the mist, Mountain Heart smiled again.
+                The End.
+                ">
+                <img src="img/MOUNTAIN HEARTcc.png" alt="New Friend from the Mountains">
+                <div class="card-content">
+                    <span class="category friendship">Friendship & Feelings, Adventure</span>
+                    <h3>Mountain heart <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Sharing a special cake in the mountains...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@peakpal</span>
+                        <span class="likes">⭐ <span class="star-count">283</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio11" src="audio/snacksbedtime-mountainheartv1.mp3"></audio>
+            </div>
+            
+            
+            <!--Coopy story-->
+            <div id="node-13" class="flowchart-node ... card" data-desc="The morning breeze rustled the curtain just enough to wake Snack. She stretched, blinked at the soft sunlight, and felt it—that tingle.
+                She had only gone outside to water her sunflower and maybe find a ladybug to say hello to.
+                But there, parked neatly under the fig tree in her backyard, sat a shiny, round little Mini Cooper with silver mirrors, pink paint, and headlights that somehow looked... amused.
+                Snack blinked. “Where did you come from?”
+                The car gave a tiny wiggle. Its engine purred quietly, like it had just taken a nap and was ready to play.
+                On the license plate, in curly golden letters, was one word:
+                COOPY.
+                Snack stepped closer. “You’re… alive?”
+                Coopy blinked his headlights once. Then his door swung open, as if to say, Hop in.
+                Snack looked left, then right, then shrugged. “Well. Might as well see where this goes.”
+                They rolled slowly out of the village and into the wild.
+                The road turned rocky, the path uncertain—exactly how Snack liked it.
+                She bumped gently over stones and drifted through clouds of wildflowers taller than the side mirror. Birds flitted overhead like tiny kites, and now and then a squirrel popped up to peek at the traveler cruising by.
+                The path twisted between hills that looked like old folded blankets. Coopy climbed carefully, steady as a heartbeat, wheels gripping the earth like it had known it forever.
+                Snack sipped from her flask of warm tea and leaned her arm on the window. “You always know how to take me somewhere new,” she said softly.
+                At the top of one particularly bumpy ridge, the trees parted—and the world opened up.
+                Below her stretched a hidden valley, painted in colors Snack had only ever seen in dreams. The grass shimmered with a silver-green light. Waterfalls spilled down from cliffs that sparkled like gemstones. Tiny cottages with thatched roofs dotted the fields, surrounded by flower gardens in perfect spirals.
+                Snack blinked, then slowly smiled. “We found it.”
+                She parked beneath a low tree and stepped out. Her boots crunched softly on the mossy path as she walked down into the valley, Coopy watching from the hilltop like a proud parent.
+                A calm coyote trotted out from behind a stone, sniffed her backpack, and sat beside her like they'd been friends forever. From the trees came the soft laughter of creatures she couldn’t see—just the sound, like wind playing tag.
+                She wandered to a circle of stones where a few villagers were sitting with baskets of glowing fruit. One waved her over, offered her something round and blue. She took a bite—it tasted like honey mixed with starlight.
+                Snack spent the day walking slowly, touching leaves shaped like hearts, spotting butterflies that changed colors with the breeze. This was a perfect place for Snack to regain strength in her calmness. No one asked her why she was there. She didn’t need a reason.
+                As the sky turned soft and sleepy, she climbed back up to Coopy.
+                She gave the hood a thankful pat. “You really do know the best secrets.”
+                Coopy said nothing, but somehow, he felt proud.
+                They rolled back home as the stars peeked out, slow and steady. No rush. Just the quiet joy of the road, and the kind of stillness that stays with you long after you’ve parked.
+                The End.">
+                <img src="img/coopyg.jpg" alt="Coopy">
+                <div class="card-content">
+                    <span class="category silly">Silly & Mischief, Exploration & Travel</span>
+                    <h3>Coopy <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Snack goes on a wild ride through colorful towns to find calmness...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@speedysnack</span>
+                        <span class="likes">⭐ <span class="star-count">185</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+                <audio id="storyAudio13" src="audio/snacksbedtime-coopy.mp3"></audio>
+            </div>
+
+
+            <!--Boat on the Nile story-->
+            <div id="node-1" class="flowchart-node ... card" data-desc="One golden afternoon, Snack and Zayn stood side by side on the deck of a grand wooden boat, ready for the journey they had dreamed up together weeks ago. The boat glided slowly along the Nile River, its reflection shimmering on the golden water like a ribbon of light.
+                The air was warm and carried the soft scent of distant spices. Palm trees lined the banks, their long leaves swaying gently in the breeze. The world around them felt still and timeless.
+                “We actually did it,” Snack whispered, leaning on the railing. “We’re really here.”
+                Zayn smiled, his eyes fixed on the horizon. “Told you we’d make it happen.”
+                The boat passed ancient temples carved from stone, their surfaces covered in mysterious symbols that told stories neither of them could fully read—but both could feel. Pyramids rose in the distance, quiet and powerful, glowing softly in the late afternoon sun.
+                Colorful birds fluttered from tree to tree along the shore, their feathers reflecting like tiny jewels. Everything moved slowly, like the world was speaking in a different rhythm here—one that only quiet hearts could hear.
+                They explored the ship together—up winding stairs to the upper deck, through small courtyards filled with fruit baskets and delicate silk fabrics, and into little corners perfect for sitting and deep talks.
+                The boat’s first stop was at a coral reef, where Snack and Zayn picked up scuba googles and  jumped into the water to explore the hidden beauty of the sea with colorful fishes including little Nemo and tons of glowing jelly fishes, while in the water Zayn joked with Snack there is a shark attack by gently biting her feet, she laughed with childlike honesty. Zayn was keep mentioning to Snack how proud he is of her for exploring the coral bay as she was a bit scared of the water at first. 
+                Few minutes later they boarded the boat again, Snack started to play with the gooey jellyfishes by watching their gentle dance and by holding them. Zayn saw Snack laugh with pure joy while playing with the jellyfishes, he could touch the uplifting peace in the air from what she reflected. 
+                Not long after. The boat took a short stop in the banana plantation area, where Snack and Zayn took crazy cute images with baby crocodiles. They both shared good laughs and contempt moments with each other.
+                After they got back to the boat, Zayn pulled out a folded paper from his pocket—it was their hand-drawn map, with doodles of crocodiles, ancient towers, and a star marking where the “best snacks ever” might be found.
+                Snack pointed toward the kitchen. “Let’s test that theory.”
+                They made their way down to the dining area, where a kindly old chef greeted them with a warm smile. Without even needing to ask, he brought them a spread of soft pita bread, creamy hummus, pav bhaji, and cheese cakes.
+                Snack took a bite and closed her eyes. “It’s like the sun and the earth made this together.”
+                Zayn nodded with his mouth full. “Definitely going on the top-five snack list.”
+                As they ate, the sky melted into sunset—shades of soft peach and lavender mixing across the river’s surface. The hum of the boat, the warmth of the air, and the magic of the moment wrapped around them like a gentle lullaby.
+                Snack leaned back against a cushion, feeling full and content. “We’ll have to come back, you know. There’s so much we didn’t see yet.”
+                Zayn tucked the map back into his pocket. “Next time, we’ll follow the river farther. Who knows what we’ll find?”
+                The stars began to appear, blinking softly above as the Nile flowed calmly below.
+                Together, they sat in silence, two adventurers, the Nile carried their dreams forward, and tomorrow would bring another adventure.
+                The End.
+                ">
+                <img src="img/boatonthenile.png" alt="Boat on the Nile">
+                <div class="card-content">
+                    <span class="category adventure">Travel & Adventure</span>
+                    <h3>Boat on the Nile <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Floating gently down the Nile, watching fascinating...</p>
+                    <div class="card-footer">
+                        <span class="user">@seashore</span>
+                        <span class="likes">⭐ <span class="star-count">234</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span> <!-- White heart initially -->
+                    </div>
+                </div>
+                <audio id="storyAudio1" src="audio/snacksbedtime-boatnile.mp3"></audio>
+            </div>
+            </div>
+
+            <div class="card-container">
+            <!--Airport story-->
+            <div id="node-12" class="flowchart-node ... card" data-desc="
+
+
+                ">
+                <img src="img/theairport.png" alt="Airport">
+                <div class="card-content">
+                    <span class="category adventure">Hearts apart</span>
+                    <h3>Airport <button type="button" class="story-btn">▶ Play</button></h3>
+                    <p class="story-preview">Snack and Zayn say...
+                    </p>
+                    <div class="card-footer">
+                        <span class="user">@flightout</span>
+                        <span class="likes">⭐ <span class="star-count">220</span></span>
+                        <span class="heart" onclick="toggleLike(event, this)">🤍</span>
+                    </div>
+                </div>
+            </div>
+            <audio id="storyAudio12" src="audio/snacksbedtime-magiccarpet.mp3"></audio>
+        </div>
+        </div>
+
+            
+
+        <!-- Modal for Flowchart / This is the pop-up window structure -->
+        <div id="flowchart-modal" class="modal-backdrop">
+            <div class="modal-content">
+                <h3 id="modal-title" class="text-xl font-bold mb-4"></h3>
+                <p id="modal-desc" class="text-gray-600"></p>
+                <button id="modal-close" style="
+                    margin-top: 1.5rem;
+                    padding: 0.5rem 1.25rem;
+                    background: linear-gradient(to right, #c94b4b, black);
+                    color: #fef08a; /* Similar to Tailwind's text-yellow-300 */
+                    border-radius: 9999px; /* Fully rounded, like rounded-full */
+                    position: relative;
+                    overflow: hidden;
+                    transition: background 0.3s ease;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-weight: 500;">
+                    <span style="position: relative; z-index: 10;">Close</span>
+                    <span style="
+                        position: absolute;
+                        inset: 0;
+                        background: #fef08a; /* Yellow-300-like overlay */
+                        opacity: 0;
+                        transition: opacity 0.3s ease;
+                    " class="hover-overlay"></span>
+                </button>
+            </div>
+        </div>
+
+    <!--Background particles-->
+    <div id="particle-container"></div>
+
+    <!--Mouse trail -->
+    <!-- <div id="trail-container"></div> -->
+
+    <!--Shruting star-->
+   <!--  <audio id="chime-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-ball-tap-2073.mp3" preload="auto"></audio> -->
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="end-title">THE END. (OF THIS PAGE)</h2>
+            <img id="popcorn" src="popcorn sad.png" alt="Popcorn Bucket" width="100">
+            <div class="footer-text">
+                <p>© <span id="year"></span> Snack's Bed Time Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scriptv2.js"></script>
+    <script src="popv1.js"></script>
+    <script src="modalflow.js"></script>
+</body>
+
+</html>
+
+<!--rewrite the intro sections for the stories to match them eg in balloon ride-->
+<!--sparkles in clean up story button is off but can try to modify-->

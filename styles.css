@@ -1,0 +1,1010 @@
+/* Flexbox container */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(166,172,186);
+    /*rgba(25, 25, 25, 1) original dark mode color*/
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: fixed;  /* Fixes the header on top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensures header stays above other content */
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'CakeCafe', Arial, sans-serif; /* Apply font here */
+}
+
+/* Ensure Span Inherits the Font */
+.logo span {
+    font-family: inherit; /* Ensures span uses CakeCafe */
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: rotate(180deg);
+}
+
+/* Hero Section */
+.hero {
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #c94b4b, black), url('image.png');
+    /* background: linear-gradient(to right, rgba(201, 75, 75, 1), rgba(0, 0, 0, 1)), 
+                url('img/head.png');
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; */
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'CakeCafe', Arial, sans-serif;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'CakeCafe', Arial, sans-serif;
+}
+
+/* Light Mode */
+.light-mode {
+    background: white;
+    color: black;
+    
+}
+
+.light-mode .header {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    
+}
+
+.light-mode .hero {
+    background: linear-gradient(to right, #ffffff, #dddddd);
+    color: black;
+}
+
+/* .main-title {
+    font-family: 'CakeCafe', Arial, sans-serif;
+    font-size: 1.5rem; 
+    color: #271616;
+    padding-bottom: 0.2rem;
+    margin: 0;
+} */
+
+.story-preview {
+    padding-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    width: 297.6px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    transition: 0.3s;
+}
+
+/* styles.css (add after .card-footer) */
+/* .story-full {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 15px;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+    background: #f9f9f9; 
+    color: #333;
+    font-size: 0.95rem;
+} */
+
+/* .card.is-open .story-full {
+    max-height: 200px; 
+    opacity: 1;
+    padding: 15px;
+} */
+
+/* Ensure card content is clickable */
+.card-content {
+    cursor: pointer; /* Makes entire card-content clickable */
+}
+
+.card img {
+    width: 100%;
+    height: 237.6px;
+    object-fit: cover;
+}
+
+/* .cardmiddle {
+    width: 297.6px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+.cardmiddle .imgmiddle {
+    width: 100%;
+    height: 237.6px;
+    object-fit: cover;
+}
+
+
+.cardmiddle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+} */
+
+.card-content {
+    padding: 15px;
+}
+
+.category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    color: white;
+    background: linear-gradient(to right, #c94b4b, black);
+}
+
+.heart {
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ /*snowfall/pillowfall */
+
+
+/* @keyframes snowfall {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(100vh); opacity: 0; }
+}
+
+.snowflake {
+    position: fixed;
+    top: -50px;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    animation: snowfall linear infinite;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .snowflake {
+        animation-duration: var(--duration);
+        left: var(--left);
+    }
+}
+
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}  */
+
+
+
+/* Importing the Custom Font */
+@font-face {
+    font-family: 'CakeCafe';
+    src: url('fonts/kiddosy/KiddosyRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0; /* Matches Bootstrap's py-3 (3 * 0.5rem = 1.5rem) */
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+}
+
+/* Navigation Item */
+.nav-item {
+    display: inline-block;
+}
+
+/* Light-Designed Buttons */
+.nav-button {
+    text-decoration: none;
+    color: #333; /* Dark text for light design */
+    background-color: #db9898; /* Light gray background */
+    padding: 0.3rem 0.8rem; /* Comfortable padding */
+    border-radius: 8px; /* Soft rounded corners */
+    font-family: Arial, sans-serif; /* Fallback font */
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    display: block; /* Ensures full clickable area */
+}
+
+.nav-button:hover {
+    background-color: #920c0c; /* Slightly darker on hover */
+    color: #000;
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Heading Container */
+.heading-container {
+    padding: 0 1rem; /* Optional: adds some horizontal spacing */
+
+    /*Recently added, check if works properly */
+    display: flex;
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    padding: 20px;
+}
+
+/* Trending Stories Heading */
+.trending-title {
+    font-family: 'CakeCafe', Arial, sans-serif; /* Custom font with fallback */
+    font-size: 2rem; /* Adjust as needed */
+    color: #333;
+    padding-bottom: 0.3rem; /* Matches pb-2 */
+    border-bottom: 2px solid #ddd; /* Light border */
+}
+
+
+/* Wonderland*/
+
+/* Load Custom Font */
+@font-face {
+    font-family: 'CakeCafe';
+    src: url('fonts/kiddosy/KiddosyRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Wonderland Section */
+.wonderland-container {
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.wonderland-title {
+    font-family: 'CakeCafe', Arial, sans-serif;
+    font-size: 2rem;
+    color: #333;
+    padding-left: 1rem;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    position: relative;
+    bottom: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.wonderland-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Wonder Card Base Styles */
+.wonder-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+}
+
+/* .wonder-card:hover {
+    transform: rotateY(180deg);
+} */
+
+/* @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+} */
+
+/* .wonder-card {
+    animation: float 3s ease-in-out infinite;
+} */
+
+/* @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+} */
+
+/* .wonder-card:hover {
+    animation: pulse 1s infinite;
+} */
+
+.wonder-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.wonder-card .card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.wonder-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.wonder-card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Animation 1: Zoom-In (Mystic Mountains) */
+.wonder-card[data-area="mystic-mountains"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation 2: 3D Spin (Crystal Lake) */
+.wonder-card[data-area="crystal-lake"]:hover {
+    /* animation: spin3D 1s ease-in-out forwards; */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* @keyframes spin3D {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+} */
+
+  /*Animation 1: Zoom-In (Mystic Mountains) */
+.wonder-card[data-area="enchanted-valley"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} 
+
+/* Footer Styles */
+/* .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem; 
+    margin: 0.5rem 0; 
+    border-top: 1px solid #ddd; 
+    background-color: #f8f9fa; 
+} */
+
+/* .footer-left {
+    display: flex;
+    align-items: center;
+}
+ */
+
+/* .footer-logo {
+    margin-right: 0.5rem; 
+    text-decoration: none;
+}
+
+.footer-logo svg {
+    vertical-align: middle;
+}
+
+.footer-left span {
+    color: #6c757d; 
+    font-size: 1rem;
+}
+ */
+
+
+ /* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid #ddd;
+    background: linear-gradient(to right, black, #c94b4b), url('image.png');
+    color: #fff; /* White text for contrast */
+}
+
+/* Footer Content Container */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limits width for better mobile responsiveness */
+}
+
+#popcorn {
+    /* position: absolute;
+    bottom: 10px;
+    left: 50%; */
+    /* transform: translateX(-50%);
+    cursor: pointer; */
+    z-index: 10;
+}
+.popcorn-piece {
+    position: absolute;
+    pointer-events: none; /* Prevent interaction with falling pieces */
+    z-index: 20; /* Ensure pieces are in front */
+}
+
+/* Footer Image (Monster) */
+.footer-image {
+    width: 200px; /* Adjust size to match the image style */
+    height: auto;
+    margin-bottom: 0.5rem; /* Space between image and text */
+    transition: transform 0.5s;
+}
+
+.footer-image:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: Arial, sans-serif; /* Fallback font; match your site’s font if needed */
+}
+
+.end-title {
+    font-size: 2rem; /* Large, bold title like "THE END." */
+    color: white; /* Green text like in the image */
+    margin: 0;
+    font-weight: bold;
+    font-family: 'CakeCafe', Arial, sans-serif; /* Apply font here */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.footer-text p {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0;
+}
+
+.light-mode .footer {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.light-mode .end-title {
+    color: #333;
+}
+
+.light-mode .footer-text p {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer-image {
+        width: 150px; /* Smaller on mobile */
+    }
+
+    .end-title {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+}
+
+/* Text Content */
+.text-content {
+    display: flex;
+    padding-top: 20px;
+    margin: 5px; /* Removes default margin */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-wrap: break-word; /* Prevents text overflow */
+    max-width: 100%; /* Ensures text doesn’t exceed container */
+    justify-content: center;
+}
+
+/* Image Content */
+.image-content {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures image fits without distortion, cropping if needed */
+    display: block; /* Ensures the image behaves as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    padding-bottom: 0;
+}
+
+.wonder-card:hover {
+    transform: translateY(-5px);
+    color: white; /* Color not applied on hover!!*/
+    background: linear-gradient(to right, #c94b4b, blue);
+}
+
+#popcorn {
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.2s ease; /* Smooth transition for hover */
+}
+#popcorn:hover {
+    content: url('popcorn (2).png'); /* Change image on hover */
+}
+.popcorn-piece {
+    position: absolute;
+    pointer-events: none;
+    z-index: 20;
+}
+
+canvas {
+    display: block !important;
+}
+
+.full-story {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  background: #f9f9ff;
+  margin: 10px 0 20px;
+  padding: 0 15px;
+  opacity: 0;
+  border-radius: 6px;
+}
+
+.card-container.expanded .full-story {
+  max-height: 300px; /* adjust based on story length */
+  opacity: 1;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.modal-backdrop.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    max-width: 90%;
+    width: 500px;
+    max-height: 80vh; /* Limit height to 80% of viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    transform: scale(0.85); /* Start smaller for more dramatic zoom */
+    opacity: 0; /* Add fade-in */
+    /* transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.4s ease-out; */ /* Bounce effect */
+    transition: transform 0.5s ease;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.modal-backdrop.visible .modal-content {
+    transform: scale(1);
+    opacity: 1; /* Fade to fully visible */
+}
+
+#modal-desc {
+    margin-bottom: 1rem; /* Add space below description */
+    line-height: 1.5; /* Improve readability for long text */
+}
+
+.flowchart-node {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.flowchart-node:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6b48ff, #ff6b97);
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+} */
+
+/* .button-container {
+  text-align: center;
+} */
+
+/* .play-btn {
+  width: 30px; 
+  height: 30px;
+  border: none;
+  background: #ffe6f0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  position: relative;
+  margin-left: 10px; 
+  padding: 0;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  background: #ffe6f0;
+}
+
+.play-btn .play-icon,
+.play-btn .pause-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-icon::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 8px solid #6b48ff; 
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+}
+
+.pause-icon::before {
+  content: '';
+  width: 4px;
+  height: 12px;
+  background: #6b48ff;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pause-icon::after {
+  content: '';
+  width: 4px;
+  height: 12px;
+  background: #6b48ff;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.play-btn.paused .play-icon {
+  display: none;
+}
+
+.play-btn .pause-icon {
+  display: none;
+}
+
+.play-btn.paused .pause-icon {
+  display: inline-block;
+} */
+
+.story-btn {
+  position: relative;
+  padding: 7px 15px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #6b48ff, #ff6b97); /* Purple to pink gradient */
+  border: none;
+  border-radius: 25px; /* Rounded edges */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(107, 72, 255, 0.3); /* Soft shadow */
+  transition: transform 0.3s ease, background 0.3s ease; /* Smooth transitions */
+}
+
+.story-btn:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  background: linear-gradient(135deg, #5a3de5, #ff4d87); /* Darker gradient on hover */
+}
+
+/* .story-btn:active {
+  transform: scale(0.95); 
+} */
+
+
+
+/* Sparkle container spans inside the button */
+.sparkle {
+  position: absolute;
+  font-size: 18px;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: sparkle-anim 700ms ease-out forwards;
+}
+
+/* Specific positions for each sparkle */
+.sparkle-1 { top: -10px; left: -10px; animation-delay: 0ms; }
+.sparkle-2 { top: -5px; left: 50%; animation-delay: 100ms; }
+.sparkle-3 { top: 0px; left: 100%; animation-delay: 200ms; }
+
+@keyframes sparkle-anim {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5) translateY(-20px);
+  }
+}
+
+#particle-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0; /* adjust if needed behind main UI */
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #f1e752aa, #ffffff00);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+}
+
+
+/*Trails for mouse */
+/* #trail-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.trail-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white, transparent);
+  opacity: 0.9;
+  animation: fade-out 0.8s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+} */
+
+/*Trail updated*/
+/* Replace default cursor with a star emoji */
+
+/* html, body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="22" font-size="24">⭐</text></svg>') 16 16, auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+#trail-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
+.trail-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, white, transparent);
+  opacity: 0.9;
+  animation: fade-out 0.8s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+} */
+
+
+
+/*Shruting star*/
+
+.floating-star {
+  position: fixed;
+  font-size: 24px;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  animation: float-up 1.2s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes float-up {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(1.5);
+  }
+}
+
+
+
+/*text bubble part */
+
+.intro-bubble {
+  max-width: 600px;
+  background: #fff6e8;
+  border: 2px solid #f4d1a1;
+  border-radius: 20px;
+  padding: 24px;
+  margin: 40px auto;
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a3b2a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Bubble Tail */
+/* .intro-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-top-color: #fff6e8;
+  border-bottom: 0;
+  margin-left: -12px;
+  transform: rotate(0deg);
+} */
+
+/* Optional soft fade in */
+.intro-bubble {
+  animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

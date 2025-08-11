@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderland Expansion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Existing Header and Trending Stories -->
+    <header class="header">
+        <div class="logo">
+            <span>🛏️ Snack's Bedtime</span> 
+        </div>
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <section class="hero">
+        <h1 class="main-title">Wonderland</h1>
+        <p class="main-title">Explore magical places</p>
+    </section>
+
+    <div class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-button">Home</a></li>
+            <li class="nav-item"><a href="allstories.html" class="nav-button">All Stories</a></li>
+            <!-- <li class="nav-item"><a href="guessgamev3.html" class="nav-button">Guess Game</a></li>
+            <li class="nav-item"><a href="dreamelevator.html" class="nav-button">Dream elevator!</a></li> -->
+            <li class="nav-item"><a href="#" class="nav-button">About</a></li>
+        </ul>
+    </div>
+
+   <!--  <div class="heading-container">
+        <h2 class="trending-title"></h2>
+    </div>
+    <div class="card-container">
+    </div> -->
+
+    <!-- Updated Wonderland Section -->
+    <div class="wonderland-container">
+        <!-- <h2 class="wonderland-title">Explore Wonderland</h2> -->
+        <div class="wonderland-cards">
+            <div class="wonder-card" data-area="mystic-mountains">
+                <img src="img/1/3dmountain4.jpg" alt="Mystic Mountains" class="resize">
+                <div class="card-content">
+                    <h3>Mystic Mountains</h3>
+                    <p>Towering peaks shrouded in magical mist.</p>
+                </div>
+            </div>
+            <div class="wonder-card" data-area="crystal-lake">
+                <img src="img//1/3dlake1.jpg" alt="Crystal Lake">
+                <div class="card-content">
+                    <h3>Crystal Lake</h3>
+                    <p>A sparkling expanse reflecting hidden wonders.</p>
+                </div>
+            </div>
+            <div class="wonder-card" data-area="enchanted-valley">
+                <img src="img/1/3dvalley.jpg" alt="Enchanted Valley">
+                <div class="card-content">
+                    <h3>Enchanted Valley</h3>
+                    <p>Lush meadows alive with mystical energy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Background particles-->
+    <div id="particle-container"></div>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="end-title">THE END. (OF THIS PAGE)</h2>
+            <img id="popcorn" src="popcorn sad.png" alt="Popcorn Bucket" width="100">
+            <div class="footer-text">
+                <p>© <span id="year"></span> Snack's Bed Time Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scriptv2.js"></script>
+    <script src="popv1.js"></script>
+    
+</body>
+</html>

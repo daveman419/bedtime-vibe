@@ -1,0 +1,232 @@
+balloon ride, boat on the nile, the airport mounain heart new version
+
+mountain heart, include kasol and mclode ganj vibes like eating sandwich from himym or something similar
+
+when clicking the start audio button play a pop sound and release some sparkles around the button
+
+the node title has Play inside try to remove it
+
+add a background with moving objects when mouse hovers
+
+change or make part 2 of balloon ride story?
+
+Snack floats high above vibrant valleys in a balloon... Drifting in a colorful hot air balloon, Snack explores cloud kingdoms and distant horizons with newfound friends.
+
+change or make part 2 of toothfairy story?
+
+Snack spots a sparkling trail left by the Tooth Fairy... The Tooth Fairy invites Snack to a magical night of collecting dreams and leaving surprisesunder pillows.
+
+rewrite the begining of airboat story? not to have swamp in the begining?
+
+change the theme colours to starry night vibe e.g dark bluish ask for new color combination and use color gradient here too
+
+To create a map that fits the whimsical, magical vibe of your "Snack's Bedtime" website, I suggest combining elements from both ideas into a single interactive map with a cohesive design. Here's a simple approach:
+Design Suggestion: Use the large map (like the first image) as a base, styled with a soft, hand-drawn aesthetic matching your site’s warm tones (e.g., gradients like #c94b4b to black, pastel greens, and purples). Divide it into 3–4 key regions (e.g., Mystic Mountains, Crystal Lake, Enchanted Valley, and a new Bedtime Village) inspired by the second image’s cards. Add subtle animations (e.g., glowing story markers) to enhance the magical feel.
+Integration: Embed the map in a full-width section below "Trending stories," using a flex or grid layout to center it. Style it with your CakeCafe font for labels and match the card borders (rounded, shadow) to blend with existing cards.
+Interactivity: Mark bedtime story locations (e.g., City, Fairy Land) with clickable icons (e.g., a glowing star or pillow). On click, use the same "roll down" effect from your story cards to reveal a preview or link to the story, ensuring one location expands at a time.
+Fit to Vibe: Add a soft overlay (e.g., light fog or stars) and a bedtime theme (e.g., moon icons) to tie it to your site’s cozy, dreamlike atmosphere.
+This balances a single, immersive map with the interactive card-like feel, enhancing your website’s magical storytelling theme. Start by updating the map’s CSS with your site’s colors and adding simple JavaScript for click events, reusing the existing toggle logic.
+
+Timeline Animation:
+Concept: Show a journey across the map (e.g., Snack’s travels from City to Fairy Land) with a moving marker (e.g., a glowing boat or carpet) along a dotted path, as seen in Mapcreator or amCharts examples.
+
+Fit: Add a playful twist with a bedtime theme—e.g., the marker could be a floating pillow or a sleepy owl. Use your site’s gradient colors (#c94b4b to black) for the path.
+
+Implementation: Use a timeline slider with play/pause controls, leveraging tools like Flourish 3D Map or custom CSS animations.
+
+Interactivity: Mark locations with clickable icons (e.g., a pillow or moon). On click, reveal a preview or link to the story, ensuring one location expands at a time, reusing your .is-open logic.
+
+
+<div class="wonderland-container">
+        <h2 class="wonderland-title">Explore Wonderland</h2>
+        
+        <div class="grid-container">
+            <div class="cell" id="cell-1" data-row="1" data-col="1">
+                <img src="img/tiles/tile1.jpg" alt="Mountains" class="tile-image">
+            </div>
+            <div class="cell" id="cell-2" data-row="1" data-col="2">
+                <img src="img/tiles/tile2.jpg" alt="Forest" class="tile-image">
+            </div>
+            <div class="cell" id="cell-3" data-row="1" data-col="3">
+                <img src="img/tiles/tile3.jpg" alt="Lake" class="tile-image">
+            </div>
+            <div class="cell" id="cell-4" data-row="1" data-col="4">
+                <img src="img/tiles/tile4.jpg" alt="Hills" class="tile-image">
+            </div>
+            <div class="cell" id="cell-5" data-row="2" data-col="1">
+                <img src="img/tiles/tile5.jpg" alt="Swamp" class="tile-image">
+            </div>
+            <div class="cell" id="cell-6" data-row="2" data-col="2">
+                <img src="img/tiles/tile6.jpg" alt="Air Balloon" class="airballoon">
+            </div>
+            <div class="cell" id="cell-7" data-row="2" data-col="3">
+                <img src="img/tiles/tile7.jpg" alt="River" class="tile-image">
+            </div>
+            <div class="cell" id="cell-8" data-row="2" data-col="4">
+                <img src="img/tiles/tile8.jpg" alt="Caravan" class="caravan">
+                <img src="img/tiles/giraffe.jpg" alt="Giraffe" class="giraffe">
+            </div>
+        </div>
+    </div>
+
+
+button{
+position: relative;
+padding: 12px 35px;
+background: var(--color);
+font-size: 17px;
+font-weight: 500;
+border: 3x solid;
+border-radius: 8px
+box-shadow: 0 0 0 ;fec1958c;
+transition all .3 ease-in-out;
+cursor: pointer;
+}
+
+button:click .star-1{
+position: absolute;
+top: -80%;
+left: -30%;
+width: 25px;
+height: auto;
+filter: drop-sadow( 0 0 10px #fffdef);
+z-index: 2;
+}
+
+button:click .star-2{
+position: absolute;
+top: -25%;
+left: 10%;
+width: 15px;
+height: auto;
+filter: drop-sadow( 0 0 10px #fffdef);
+z-index: 3;
+
+button:click .star-6{
+position: absolute;
+top: 5%;
+left: 50%;
+width: 8px;
+height: auto;
+filter: drop-sadow( 0 0 10px #fffdef);
+z-index: -5;
+}
+
+
+Boat on the Nile v0
+
+One golden afternoon, Little Snack’s family took her on a grand wooden boat trip: The ship gently floated down the Nile River. The air was warm, the water shimmered like melted gold, and the sound of palm trees swaying in the breeze made everything feel magical.
+“An adventure on the Nile! This is going to be amazing!” Snack cheered, leaning over the railing.
+The boat rocked gently as it glided past ancient temples carved from stone, their walls covered in mysterious hieroglyphs. Mighty pyramids stood in the distance, glowing under the setting sun. Exotic birds flitted from tree to tree, their feathers bursting with colors Snack had never seen before.
+“Wow,” she whispered. “It’s like sailing through a history book.”
+Just then—BOOP!—something tapped her shoulder.
+Snack spun around. A small boy about her age, with curly hair and a playful grin, stood behind her.
+“Tag! You’re it!” he shouted before dashing away.
+“Oh-ho! You wanna play tag on a moving boat? Challenge accepted!” Snack laughed, taking off after him.
+The game was ON. Snack chased him up the stairs to the upper deck, weaving between baskets of fresh fruit. She almost had him—when he ducked behind a pile of soft silk cushions and disappeared!
+“Where’d you go, sneaky?” Snack called, creeping forward.
+Suddenly, the boy popped out from behind a curtain. “BOO!”
+Snack jumped back, then burst out laughing. “Okay, that was a good one!”
+After running in circles around the deck, they both collapsed onto a big pile of cushions, out of breath and giggling.
+“I’m Zayn,” the boy said, still catching his breath. “Wanna get some snacks?”
+Snack’s eyes lit up. “Always.”
+A kind old chef on the boat brought them warm pita bread, creamy hummus, and the juiciest dates Snack had ever tasted. She took a big bite and sighed happily.
+“This is so good,” she mumbled between bites.
+As they ate, the sun dipped lower, painting the sky with pinks, oranges, and purples. The Nile sparkled like a river made of dreams.
+Snack stretched her arms and let out a deep, happy sigh. “Sailing, tag, new best friend: Zayn and the yummiest food—best adventure ever.”
+Zayn grinned. “Come back soon! There’s more to explore!”
+The boat gently rocked as the stars started twinkling above. Snack smiled, knowing she’d return for another adventure on the Nile someday.
+
+
+Coopy v0
+
+Snack wasnt expecting a …
+She had only gone outside to water her sunflower and maybe find a ladybug to say hello to.
+But there, parked neatly under the fig tree in her backyard, sat a shiny, round little Mini Cooper with silver mirrors, pink paint, and headlights that somehow looked... amused.
+Snack blinked. “Where did you come from?”
+The car gave a tiny wiggle. Its engine purred quietly, like it had just taken a nap and was ready to play.
+On the license plate, in curly golden letters, was one word:
+ COOPY.
+Snack stepped closer. “You’re… alive?”
+Coopy blinked his headlights once. Then his door swung open, as if to say, Hop in.
+Snack looked left, then right, then shrugged. “Well. Might as well see where this goes.”
+She climbed in—and before she could even buckle her seatbelt, Coopy took off.
+Not fast or scary.
+ Just a joyful, twisty kind of glide, like sliding on a rainbow made of bubblegum.
+They zipped through narrow alleys and cobbled streets where laundry hung from windows and cats sunbathed on windowsills.
+A child waved from a balcony holding a spoon full of jam. Coopy gave a friendly toot of his horn, and the spoon jiggled happily in reply.
+Snack laughed, her hair whipped gently by the wind. “You’re kind of wild,” she said to the dashboard.
+Coopy turned down a hill so steep it looked like it belonged in a spiral lollipop. At the bottom, they skidded into a town square painted in every color Snack could name, and a few she couldn’t.
+The roads were lined with tiny houses shaped like teapots, where butterflies fluttered in and out of the chimneys. A group of elderly turtles played cards at a café table. One of them tipped his cap.
+Snack leaned out the window. “This place is amazing!”
+Coopy blinked his lights in agreement and pulled into a roundabout with five exits—and took none of them.
+He just circled.
+Once.
+Twice.
+Seven times.
+“Are you dizzy or just showing off?” Snack asked, smiling.
+Coopy finally zipped out of the loop and darted up a path full of soft hills that bounced under the tires like sponge cake.
+At the top of the tallest hill, Coopy stopped.
+Snack stepped out. Below them stretched the whole land they had explored—colorful rooftops, winding roads, trees shaped like stars, and even a long rainbow bridge in the distance.
+The sun dipped low behind the hills, setting the clouds aglow in orange and peach.
+Snack sat on the hood and rested her chin in her hands. “Thanks for the ride,” she whispered.
+Coopy gave one tiny bounce, as if to say, You’re welcome.
+Then his headlights blinked slowly—once, twice—and dimmed for the night.
+Snack curled up right there on the warm hood under the growing moonlight, feeling the hum of the little car’s heart beneath her.
+And in that quiet moment, she thought,
+ Sometimes, adventures find you. Especially when you least expect them.
+The End.
+
+ She had only gone outside to water her sunflower and maybe find a ladybug to say hello to.
+                But there, parked neatly under the fig tree in her backyard, sat a shiny, round little Mini Cooper with silver mirrors, pink paint, and headlights that somehow looked... amused.
+                Snack blinked. “Where did you come from?”
+                The car gave a tiny wiggle. Its engine purred quietly, like it had just taken a nap and was ready to play.
+                On the license plate, in curly golden letters, was one word:
+                COOPY.
+
+ Snack stepped closer. “You’re… alive?”
+                Coopy blinked his headlights once. Then his door swung open, as if to say, Hop in.
+                Snack looked left, then right, then shrugged. “Well. Might as well see where this goes.”
+
+airboat v0
+
+One foggy morning, Snack pulled her goggles over her eyes, tied her scarf tight, and climbed onto a super-speedy airboat parked by the edge of a twisty swamp river.
+                This wasn’t just any river—it flowed just beyond the fairy land’s valley, in a mysterious place that sparkled on the map with a big sign reading: “Do Not Enter... unless you’re feeling brave.”
+                Snack, of course, felt very brave.
+                And a little bit snacky. But mostly brave.
+                “Let’s zoom!” she shouted, hitting the big green button on the airboat’s dash.
+                WHOOSH!
+                The engine roared to life, and the boat zipped forward, gliding over water like butter on a hot pancake.
+                Mist swirled around her as she zipped past tangled trees and tall grasses.
+                Suddenly, a pair of eyes popped out of the water.
+                Alligators!
+                Snack slowed the boat.
+                But instead of snapping their jaws, the alligators blinked politely and waved.
+                One wore a little straw hat and said, “Welcome to Gator Grove, traveler. Mind the whirlpool ahead.”
+                “Whirlpool?” Snack asked, confused—
+                And then she saw it.
+                A giant swirling circle of water, spinning fast and glowing blue like it had swallowed the sky.
+                “Here we go!” Snack shouted, grabbing her goggles.
+                The boat hit the whirl—WHOOSH-SLOSH-POP!
+                Everything spun, flipped, fizzed—
+                and then…
+                Silence.
+                The airboat floated out into a totally new world.
+                No more swamp. No more trees.
+                Instead, there were sparkling lagoons, waterfalls that flowed upwards, and fish that sang jazz.
+                Snack blinked. “Okay, this place is amazing.”
+                She sped ahead, gliding across the glimmering water. A giant lily pad floated by with turtles having a tea party.
+                “Don’t forget the honey!” one called out cheerfully.
+                Snack gave them a thumbs up and zoomed past a waterfall shaped like a dragon’s head, which winked at her as she zipped underneath.
+                Then she heard it—giggles.
+                On a tiny island sat a group of fairy creatures playing hide and seek in the reeds.
+                Snack slowed the boat and joined them for a round. She hid behind a puffball tree and was almost impossible to find until her stomach growled.
+                “Found you!” they all squealed, laughing.
+                After the game, Snack sat down with them for a snack of sweet cloudberries and fizzy bubbleleaf tea.
+                “Can I visit again?” Snack asked as she climbed back onto her airboat.
+                “Of course,” they said. “Just follow the whirl.”
+                With a final wave, Snack revved the engine—
+                VRRROOOOM!
+                And zoomed back through the water, smiling as the sun dipped low.
+                Another day, another snack-sized adventure.
+                The End.

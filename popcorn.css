@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+#popcorn {
+    /* position: absolute;
+    bottom: 10px;
+    left: 50%; */
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+.popcorn-piece {
+    position: absolute;
+    pointer-events: none; /* Prevent interaction with falling pieces */
+    z-index: 20; /* Ensure pieces are in front */
+}
